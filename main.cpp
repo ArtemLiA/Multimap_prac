@@ -14,7 +14,7 @@ void print_multimap(const std::multimap<std::string, std::string>& m1){
 //Функция, изменяющая номер под единый стандарт
 std::string transform_number(const std::string& num){
     std::string str = num;
-    std::string chars_to_delete = " -+";
+    std::string chars_to_delete = " -+_";
     for (char c: chars_to_delete){
         str.erase(std::remove(str.begin(), str.end(), c), str.end());
     }
